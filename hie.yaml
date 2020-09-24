@@ -1,10 +1,7 @@
 cradle:
-  stack:
-    - path: "./src/"
-      component: "component:lib"
+  cabal:
+    - path: "src/"
+      component: "lib:component"
 
-    - path: "./app/Main.hs"
-      component: "component:exe:component"
-
-    - path: "./app/Paths_component.hs"
+    - path: "app/Main.hs"
       component: "component:exe:component"
