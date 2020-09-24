@@ -1,0 +1,17 @@
+name: component
+
+dependencies:
+  - base
+  - ghc
+
+library:
+  source-dirs: src/
+
+executable:
+  main: Main.hs
+  source-dirs: app/
+  ghc-options: -fobject-code
+  dependencies:
+    - component
+
+              
